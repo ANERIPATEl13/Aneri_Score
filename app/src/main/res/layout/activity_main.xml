@@ -18,6 +18,7 @@
         android:layout_marginTop="70dp"
         android:layout_marginStart="40dp"
         android:orientation="horizontal"
+        android:checkedButton="@id/radio_button_one"
         >
 
         <RadioButton
