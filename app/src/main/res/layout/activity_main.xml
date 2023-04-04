@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/layout_main"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -27,11 +26,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:buttonTint="#060047"
-            android:text="1"
+            android:text="@string/score_1"
             android:padding="8dp"
-            android:textColor="#B3005E"
-            android:textSize="60dp" />
+            style="@style/score_style" />
 
         <RadioButton
             android:id="@+id/radio_button_two"
@@ -39,11 +36,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:buttonTint="#060047"
-            android:text="2"
+            android:text="@string/score_2"
             android:padding="8dp"
-            android:textColor="#B3005E"
-            android:textSize="60dp" />
+            style="@style/score_style"/>
 
         <RadioButton
             android:id="@+id/radio_button_three"
@@ -52,10 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:buttonTint="#060047"
-            android:text="3"
-            android:textColor="#B3005E"
-            android:textSize="60dp" />
+            android:text="@string/score_3"
+            style="@style/score_style"/>
 
 
     </RadioGroup>
@@ -81,34 +74,23 @@
             android:id="@+id/tv_team_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="Team 1"
-            android:textColor="#060047"
-            android:textSize="30dp" />
+            android:text="@string/team_1"
+            style="@style/heading2" />
 
 
         <!--        Textview to display Score of team 1: -->
         <TextView
             android:id="@+id/tv_score_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginTop="30dp"
-            android:text="0"
-            android:textColor="#B3005E"
-            android:textSize="100dp" />
+            android:text="@string/team_1_score"
+            style="@style/team_score_style"/>
 
 
         <!--        ImageButton containing icon to increase score of team 1: -->
         <ImageButton
             android:id="@+id/ib_increment_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#00FFFFFF"
-            android:gravity="center_vertical"
             android:src="@drawable/round_control_point_24"
-            android:textColor="#000" />
+            style="@style/increment_btn_style"
+            android:contentDescription="@string/increment_score" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -126,32 +108,21 @@
             android:id="@+id/tv_team_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="Team 2"
-            android:textColor="#060047"
-            android:textSize="30dp" />
+            android:text="@string/team_2"
+            style="@style/heading2"/>
 
         <!--        Textview to display Score of team 1: -->
         <TextView
             android:id="@+id/tv_score_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginTop="30dp"
-            android:text="0"
-            android:textColor="#B3005E"
-            android:textSize="100dp" />
+            android:text="@string/team_2_score"
+            style="@style/team_score_style"/>
 
         <!--        ImageButton containing icon to increase score of team 1: -->
         <ImageButton
             android:id="@+id/ib_increment_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#00FFFFFF"
-            android:gravity="center_vertical"
             android:src="@drawable/round_control_point_24"
-            android:textColor="#000" />
+            style="@style/increment_btn_style"
+            android:contentDescription="@string/increment_score" />
     </androidx.appcompat.widget.LinearLayoutCompat>
     </LinearLayout>
 

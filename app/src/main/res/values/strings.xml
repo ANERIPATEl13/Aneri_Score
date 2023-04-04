@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Aneri_Score</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="score_1">1</string>
+    <string name="score_2">2</string>
+    <string name="score_3">3</string>
+    <string name="team_1_score">0</string>
+    <string name="team_2_score">0</string>
+    <string name="increment_score">Increment score</string>
 </resources>
